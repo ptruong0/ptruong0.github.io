@@ -2,23 +2,314 @@
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Philip Truong
+EMAIL: pctruong@uci.edu
 -->
 
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Your name here">
   <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <!-- you would link to an external stylesheet here! -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- you would also link to Bootstrap here! -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- <script src="https://kit.fontawesome.com/27764f2b83.js" crossorigin="anonymous"></script> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <script src="script.js"></script>
+
+  <title>Philip Truong's Portfolio</title>
 </head>
+
 <body>
-  <p>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="collapse navbar-collapse justify-content-end my-2" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="navlink" href="#">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="navlink" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="navlink" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="navlink" href="#design">Design Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="navlink disabled" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- <p>
     <a href="http://validator.w3.org/check?uri=referer">
        W3C validator
     </a>
-  </p>
+  </p> -->
+  <div class="header-section">
+    <div class="header-content">
+      <div class="d-flex justify-content-center">
+        <img class="profile-img" src="assets/bumi.jpg" alt="Philip Truong headshot photo" />
+      </div>
+      <h1 class="name-header text-center font-weight-bold py-4">Philip Truong</h1>
+      <!-- <h5 class="text-center">3rd Year Undergraduate CS Major - UC Irvine</h5> -->
+      <div class="d-flex justify-content-center">
+        <div class="socials-row d-flex justify-content-around my-4">
+          <svg onclick="copyToClipboard('philtr928@gmail.com')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+            height="50" fill="#FFFFFF"
+            width="50"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+          </svg>
+          <a href="https://www.instagram.com/phil.truon/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="50" fill="#FFFFFF"
+              width="50"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/philip-truong/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="50" fill="#FFFFFF"
+              width="50"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+            </svg>
+          </a>
+          <a href="https://github.com/ptruong0" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" height="50" fill="#FFFFFF"
+              width="50"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+            </svg>
+
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="about-section section" id="about">
+    <div class="d-flex justify-content-center">
+      <h2 class="section-title about-me">About Me</h2>
+      <p class="intro-blurb">
+        I am a 3rd-year undergraduate at UC Irvine, majoring in Computer Science and minoring in Statistics.
+        I am originally from the Bay Area, but am currently living in OC.
+        I have an extensive background in web development, UI design, and machine learning through my job, clubs, and
+        projects.
+        Aside from school and work, I love to cook/bake, go to the gym, draw, and listen to music.</p>
+    </div>
+  </div>
+  <div class="projects-section section" id="projects">
+    <h2 class="section-title font-weight-bold">Projects</h2>
+    <div class="projects-grid container w-100">
+      <div class="row card-row">
+        <div class="col card project-card">
+          <span class="tag">Personal</span>
+          <img src="assets/spotifish.png" class="card-img" alt="Spotifish landing page">
+          <div class="card-body">
+            <h5 class="card-title">Spotifish</h5>
+            <p class="card-text">Web app that visualizes a user's Spotify top artists as fish in an aquarium. The size
+              of the fish
+              correlates to the frequency of the artist. The app displays other listening data about each artist as
+              well.
+            </p>
+            <em> [React, Node, Spotify API]</em>
+            <a href="https://github.com/ptruong0/spotifish" target="_blank" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="col card project-card">
+          <span class="tag">Work</span>
+          <img src="assets/mlrepo.png" class="card-img" alt="UCI Machine Learning Repository home page">
+          <div class="card-body">
+            <h5 class="card-title">UCI Machine Learning Repository</h5>
+            <p class="card-text">Hosts ~600 machine learning datasets accessed by users around the world.
+              Includes features like advanced dataset search/filtering and dataset donation.
+              I work on this website as a part-time research position.</p>
+            <em>[Typescript, Svelte, tRPC, Prisma, MySQL] </em>
+            <a href="https://archive-beta.ics.uci.edu/" target="_blank" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="col card project-card">
+          <span class="tag">Class</span>
+          <img src="assets/cs175.png" class="card-img" alt="Word Clouds and Confusion Matrices from ML Project">
+          <div class="card-body">
+            <h5 class="card-title">Lyric Genre Classifier</h5>
+            <p class="card-text">Classifies lyric text into genres using different models like logistic regression,
+              feed-forward neural networks, and LSTM RNN models. Project includes preprocessing, GloVe
+              embedding generation, model training, and evaluation metrics. Built with a group for CS 175 (Project in
+              AI).
+            </p>
+            <em> [Python, Numpy, NLTK, Tensorflow, Jupyter]</em>
+            <a href="https://github.com/ptruong0/cs175" target="_blank" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col card project-card">
+          <span class="tag">Hackathon</span>
+          <img src="assets/global-vibe-check.jpg" class="card-img" alt="Global Vibe Check website main page">
+          <div class="card-body">
+            <h5 class="card-title">Global Vibe Check</h5>
+            <p class="card-text">Web app that visualizes the severity of COVID-19 cases in different countries through
+              an interactive
+              (spinnable) globe. Markers for famous cities also display additional COVID statistics. Won Best UI/UX at
+              HackUCI 2021.
+            </p>
+            <em> [React, Firebase]</em>
+            <a href="https://devpost.com/software/global-vibe-check" target="_blank" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="card col project-card">
+          <span class="tag">Club</span>
+          <img src="assets/ctc-bm.png" class="card-img" alt="UCI Bathroom Map mobile app screenshots">
+          <div class="card-body">
+            <h5 class="card-title">UCI Bathroom Map</h5>
+            <p class="card-text">Mobile web app displaying a map of bathrooms on the UCI campus, accounting for 
+              accessibility and gender-neutral accomodations. Displays ratings, photos, and reviews of bathrooms, and offers
+              navigation to the closest bathroom
+              based on current location. Created with Commit the Change, a club that develops apps for social good.
+            </p>
+            <em>[React, Bootstrap, Node, Mongo]</em>
+            <a href="https://github.com/ctc-uci/bp-bathroom-map" target="_blank" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="card col project-card">
+          <span class="tag">Personal</span>
+          <img src="assets/statify.png" class="card-img" alt="Logo of Statify app">
+          <div class="card-body">
+            <h5 class="card-title">Statify</h5>
+            <p class="card-text">Generates and displays statistics of a user's playlists e.g. graphs and counts of
+              artist/genre frequencies.
+              Also able to display lyrics of selected songs on the playlist.
+
+            </p>
+            <em>[React, Node, Spotify API, Genius API]</em>
+            <a href="https://github.com/ptruong0/cs175" target="_blank" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col card project-card">
+          <span class="tag">Hackathon</span>
+          <img src="assets/daplan.jpg" class="card-img" alt="DaPlan task scheduler main page">
+          <div class="card-body">
+            <h5 class="card-title">DaPlan</h5>
+            <p class="card-text">Task scheduler web app that stores and displays color-coded tasks. Uses algorithms/data
+              structures to sort
+              them based on priority and due dates. Built with a group for SDHacks 2021 (prize winner).
+            </p>
+            <em>[Java, JavaFX]</em>
+            <a href="https://devpost.com/software/da-plan" target="_blank" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="card col project-card">
+          <span class="tag">Hackathon</span>
+          <img src="assets/colunteer.jpg" class="card-img" alt="Colunteer web app landing page">
+          <div class="card-body">
+            <h5 class="card-title">Colunteer</h5>
+            <p class="card-text">Web app that coordinates volunteers with events. Manages volunteer signups,
+              volunteering event creation
+              , and filtered event search. Built with a group for the hello:world hackathon.
+            </p>
+            <em>[React, Bootstrap, Firebase]</em>
+            <a href="https://devpost.com/software/co-lunteer" target="_blank" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="card col project-card">
+          <span class="tag">Personal</span>
+          <img src="assets/pacman.png" class="card-img" alt="Screenshot of recreated Pac Man gameplay">
+          <div class="card-body">
+            <h5 class="card-title">Pac Man</h5>
+            <p class="card-text">Re-creation of the classic Pac Man arcade game in Java. Includes scores, special
+              power-ups,
+              multiple ghost enemies, and increasing difficulty.
+            </p>
+            <em>[Java]</em>
+            <a href="https://github.com/ptruong0/pac-man" target="_blank" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card col project-card">
+          <span class="tag">Hackathon</span>
+          <img src="assets/lingua.png" class="card-img" alt="Lingua app landing page">
+          <div class="card-body">
+            <h5 class="card-title">Lingua</h5>
+            <p class="card-text">Web app that matches two users using the same language and initiates a chat between
+              them complete with topics to talk about. Intended as a language practice tool during the pandemic.
+              Won Best in Communication for MataHacks 2020.
+            </p>
+            <em>[Flask, Python, JS, JQuery]</em>
+            <a href="https://devpost.com/software/lingua-fyhwt2" target="_blank" class="stretched-link"></a>
+          </div>
+        </div>
+        <!-- placeholders for future projects -->
+        <div class="card col project-card invisible"> </div>
+        <div class="card col project-card invisible"> </div>
+
+      </div>
+    </div>
+    <div id="liveAlertPlaceholder"></div>
+  </div>
+
+  <div class="design-section section" id="design">
+    <h2 class="section-title font-weight-bold">Design Portfolio</h2>
+    <div class="text-center">
+    <p>Google Drive Link containing Design Work</p>
+    <a href="https://drive.google.com/drive/u/1/folders/1ECCF7psJsacHbnybUrlKQw7rUJWEmWxf" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+      width="50" height="50" fill="#FFB2B2"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M339 314.9L175.4 32h161.2l163.6 282.9H339zm-137.5 23.6L120.9 480h310.5L512 338.5H201.5zM154.1 67.4L0 338.5 80.6 480 237 208.8 154.1 67.4z"/></svg>
+    </a>
+  </div>
+
+  </div>
+  <div class="contact-section section" id="contact">
+    <div class="d-flex justify-content-start">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-info">
+        <div class="d-flex justify-content-start">
+          <svg onclick="copyToClipboard('philtr928@gmail.com')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+            height="20" width="20"
+            fill="#FFB2B2"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+          </svg>
+          <p class="px-3">Email: philtr928@gmail.com</p>
+        </div>
+        <div class="d-flex justify-content-start">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="20" width="20"
+            fill="#FFB2B2"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+          </svg>
+          <p class="px-3">Phone: (510)418-3553</p>
+        </div>
+        <div class="d-flex justify-content-start">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="20" width="20"
+            fill="#FFB2B2"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+          </svg>
+          <p class="px-3">Castro Valley, CA</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>
