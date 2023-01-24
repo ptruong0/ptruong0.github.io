@@ -1,6 +1,8 @@
+// copies text to clipboard
 function copyToClipboard(text) {
   navigator.clipboard.writeText(text);
 
+  // renders temporary alert
   const alertPlaceholder = document.querySelector('#alertPlaceholder')
   const wrapper = document.createElement('div')
   wrapper.innerHTML = [
@@ -11,12 +13,6 @@ function copyToClipboard(text) {
 
   alertPlaceholder.append(wrapper)
 
+  // which disappears after 2.5 secs
   setTimeout(()=> document.querySelector('#copy-alert').style.display = 'none', 2500);
-}
-
-function toggleMenu() {
-  const hamburger = document.querySelector("#hamburger")
-  hamburger.style.display = 'none'
-  const navbar = document.querySelector("#navbarNav")
-  navbar.style.display = 'block!important'
 }
