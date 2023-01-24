@@ -127,7 +127,6 @@ body {
 .drift-right {
   left: 0;
   animation: 25s linear 0s infinite alternate drift-right;
-
 }
 
 /* header (name, photo) */
@@ -271,6 +270,36 @@ body {
     justify-content: end;
   }
 
+  @keyframes drift-right {
+    from {
+      transform: translate(-30vw);
+    }
+  
+    to {
+      transform: translate(100vw);
+    }
+  }
+  
+  @keyframes drift-left {
+    from {
+      transform: translate(30vw);
+    }
+  
+    to {
+      transform: translate(-100vw);
+    }
+  }
+
+  .drift-left {
+    right: 0;
+    animation: 25s linear 0s infinite alternate drift-left;
+  }
+  
+  .drift-right {
+    left: 0;
+    animation: 25s linear 0s infinite alternate drift-right;
+  }
+
   .icon {
     width: 3em;
     height: 3em;
@@ -321,11 +350,6 @@ body {
     justify-content: center !important;
     color: white;
   }
-
-  .pink-cloud {
-    /* display: none; */
-  }
-
   .header-content {
     padding-top: 20vh;
   }
@@ -408,10 +432,6 @@ body {
   /* .pink-cloud, .pink-hill, .trees {
     display: none;
   } */
-
-  .pink-cloud {
-    /* display: none; */
-  }
 
   .header-content {
     padding-top: 25vh;
