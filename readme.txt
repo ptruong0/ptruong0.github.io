@@ -10,40 +10,54 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/15
-- */1 Readme
-- */3 Basic HTML content
-- */3 Basic CSS styling
-- */2 Advanced feature
-- */3 Responsive layout
-- */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+15/15
+- 1/1 Readme
+- 3/3 Basic HTML content
+- 3/3 Basic CSS styling
+- 2/2 Advanced feature
+- 3/3 Responsive layout
+- 1/1 Passes validation checks
+- 2/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-
+* Headers, paragraph text
+* Images with alt attributes
+* External links
+* Card components
+* Font Awesome icons with button behavior
 
 
 (b) CSS features
-
+* Padding, margins
+* Color palette
+* Google Font
+* Grid layout
+* Bootstrap components (nav, card)
+* Hover transitions
 
 
 (c) Advanced features
+* Navbar that links to different sections of the page
+* CSS Animations
 
 
 
 3. How long, in hours, did it take you to complete this assignment?
-
+10
 
 
 4. What online resources did you consult when completing this assignment? (list specific URLs)
-
+https://www.w3schools.com/html/
+https://www.w3schools.com/css/default.asp
+https://stackoverflow.com/
+https://developer.mozilla.org/en-US/
 
 
 5. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
+None
 
 
 6. Is there anything special we need to know in order to run your code?
-
+No
