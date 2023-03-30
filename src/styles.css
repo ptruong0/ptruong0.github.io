@@ -142,11 +142,14 @@ body {
 
 .header-section {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-content {
-  position: relative;
-  padding-top: 20vh;
+  max-height: 80vh;
   animation: 2s ease-in-out 0s infinite alternate float, 1.5s linear 0s 1 normal fadeInDelay;
 }
 
@@ -312,6 +315,7 @@ body {
 
   .socials-row {
     width: 25vw;
+    margin-top: 1.5em;
   }
 
   .section-title {
@@ -350,9 +354,6 @@ body {
     justify-content: center !important;
     color: white;
   }
-  .header-content {
-    padding-top: 20vh;
-  }
 
   .name-header {
     font-size: 5em !important;
@@ -367,6 +368,7 @@ body {
 
   .socials-row {
     width: 60vw;
+    margin-top: 1.5em;
   }
 
   .icon {
@@ -433,22 +435,23 @@ body {
     display: none;
   } */
 
-  .header-content {
-    padding-top: 25vh;
+  .name-header {
+    font-size: 3em !important;
+  }
+
+  .socials-row {
+    width: 80vw;
+    margin-top: 1.5em;
+  }
+
+  .icon {
+    width: 3em;
+    height: 3em;
   }
 
   .profile-img {
     height: 12em;
     width: 12em;
-  }
-
-  .socials-row {
-    width: 60vw;
-  }
-
-  .icon {
-    width: 4em;
-    height: 4em;
   }
 
   .section-title {
@@ -495,5 +498,26 @@ body {
   .card-img {
     max-height: 14em;
     max-width: 30em;
+  }
+}
+
+@media screen and (max-height: 720px) {
+  .name-header {
+    font-size: 3em !important;
+  }
+
+  .socials-row {
+    width: 40vw;
+    margin-top: 0;
+  }
+
+  .icon {
+    width: 3em;
+    height: 3em;
+  }
+
+  .profile-img {
+    height: 8em !important;
+    width: 8em !important;
   }
 }

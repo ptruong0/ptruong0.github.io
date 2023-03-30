@@ -61,10 +61,10 @@ EMAIL: pctruong@uci.edu
       <!-- name -->
       <h1 class="name-header text-center font-weight-bold py-4">Philip Truong</h1>
       <div class="d-flex justify-content-center">
-        <div class="socials-row d-flex justify-content-around my-4">
+        <div class="socials-row d-flex justify-content-around mb-4">
           <!-- mail icon copies email address to clipboard when clicked -->
           <svg onclick="copyToClipboard('philtr928@gmail.com')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-            class="btn-hover icon"
+            class="btn-hover icon" height="50" width="50"
             fill="#FFFFFF"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
             <path
               d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
@@ -101,7 +101,7 @@ EMAIL: pctruong@uci.edu
   <!-- about me section -->
   <div class="about-section section" id="about">
     <!-- row with section title and introduction paragraph -->
-    <div class="d-flex justify-content-center content-row">
+    <div class="d-flex justify-content-center content-row mt-4">
       <h2 class="section-title about-me">About Me</h2>
       <p class="intro-blurb center-text">
         Welcome to my portfolio! My name is Phil and
@@ -144,7 +144,7 @@ EMAIL: pctruong@uci.edu
           <h3 class="card-title">UCI Machine Learning Repository</h3>
           <p class="card-text">Hosts ~600 machine learning datasets accessed by users around the world.
             Includes features like advanced dataset search/filtering and dataset donation.
-            I work on this website as a part-time research position.</p>
+            I work on this website as a part-time campus research position.</p>
           <em>[Typescript, Svelte, tRPC, Prisma, MySQL] </em>
           <a href="https://archive-beta.ics.uci.edu/" title="UCI Machine Learning Repository website" target="_blank" class="stretched-link"></a>
         </div>
@@ -160,6 +160,18 @@ EMAIL: pctruong@uci.edu
           </p>
           <em> [Python, Numpy, NLTK, Tensorflow, Jupyter]</em>
           <a href="https://github.com/ptruong0/cs175" title="Genre Classifier Github repository" target="_blank" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="col card project-card">
+        <span class="tag">Personal</span>
+        <img src="../assets/rock-paper-scissors.png" class="card-img" alt="Spotifish landing page">
+        <div class="card-body">
+          <h3 class="card-title">Rock, Paper, Scissors</h3>
+          <p class="card-text">Web app that detects the user's hand gestures through the camera to play rock, paper, scissors with an AI opponent.
+            Supports basic move gestures as well as more complex gestures for game settings.
+          </p>
+          <em> [Typescript, Angular, CSS, Handtrack.js]</em>
+          <a href="https://github.com/ptruong0/rock-paper-scissors" title="Rock, Paper, Scissors Github repository" target="_blank" class="stretched-link"></a>
         </div>
       </div>
       <div class="col card project-card">
