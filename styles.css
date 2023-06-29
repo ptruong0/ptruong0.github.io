@@ -6,13 +6,13 @@
 }
 
 body {
-  background: linear-gradient(#002F10, #003137);
+  background: linear-gradient(#131020, #00010d);
   overflow-x: hidden;
 }
 
 /* navbar */
 .navbar {
-  background-color: #002F10;
+  background-color: #131020;
 }
 
 .nav-link {
@@ -23,7 +23,7 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #FFB2B2;
+  background-color: #C8B6FF;
   color: #002F10 !important;
   padding-left: 1em !important;
   padding-right: 1em !important;
@@ -68,6 +68,23 @@ body {
   }
 }
 
+
+.line {
+  position: absolute;
+  height: 50vh;
+  width: 100vw;
+  border-bottom: 3px white solid;
+}
+
+.sparkle {
+  position: relative;
+  right: 0%;
+  
+  background-color: white;
+  color: white;
+  border-radius: 50%;
+  height: 1em; width: 1em;
+}
 
 .pink-hill {
   position: absolute;
@@ -140,6 +157,32 @@ body {
   }
 }
 
+.star {
+  position: fixed;
+  opacity: 0.2;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 5px 2px #FFD6FF;
+  animation: 3s infinite glow;
+  z-index: -1;
+
+}
+
+@keyframes glow {
+  0% {
+      opacity: 0.2;
+      box-shadow: 0px 0px 5px 2px #FFD6FF;
+  }
+  50% {
+      opacity: 0.4;
+      box-shadow: 0px 0px 8px 3px #FFD6FF;
+  }
+  100% {
+      opacity: 0.2;
+      box-shadow: 0px 0px 5px 2px #FFD6FF;
+  }
+}
+
 .header-section {
   height: 100vh;
   display: flex;
@@ -148,15 +191,53 @@ body {
   align-items: center;
 }
 
+@keyframes bob {
+  0% {
+    padding-top: 0px;
+  }
+  50% {
+    padding-top: 12px;
+  }
+  100% {
+    padding-top: 0px;
+  }
+}
+
 .header-content {
   max-height: 80vh;
   animation: 2s ease-in-out 0s infinite alternate float, 1.5s linear 0s 1 normal fadeInDelay;
+  animation: 5s infinite bob;
+
 }
 
 .name-header {
-  font-size: 5em !important;
+  font-size: 4em !important;
   font-weight: bold;
-  margin: 0;
+  color: #dbcfff;
+  transition: all 0.3s ease;
+}
+
+.name-header:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+
+.name-star {
+  opacity: 0%;
+  color: #C8B6FF;
+  animation: 10s infinite disappear;
+}
+
+@keyframes disappear {
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
 }
 
 .profile-img {
@@ -164,11 +245,15 @@ body {
 }
 
 /* social media buttons */
+.btn-hover {
+  transition: all 0.3s ease;
+}
+
 .btn-hover:hover {
   cursor: pointer;
   transform: scale(1.07) !important;
-  transition: 0.3s ease-in-out;
-  fill: #FFB2B2;
+  transition: 0.2s ease-in-out;
+  fill: #C8B6FF;
 }
 
 #copy-alert {
@@ -176,7 +261,7 @@ body {
   display: block;
   left: 50%;
   bottom: 8%;
-  background-color: #FFB2B2;
+  background-color: #C8B6FF;
   border-radius: 2em;
   padding: 1em 1em;
   transform: translate(-50%, 0%);
@@ -196,7 +281,7 @@ body {
 .section-title {
   font-weight: bold;
   min-width: 5em;
-  color: #ffdcdc;
+  color: #C8B6FF;
 }
 
 /* project section cards */
@@ -211,7 +296,7 @@ body {
 
 .card-title {
   font-weight: bold;
-  color: #ffdcdc !important;
+  color: #C8B6FF !important;
   padding: 1em 0 0.5em 0;
 }
 
@@ -220,6 +305,7 @@ body {
   padding: 0em !important;
   border: 0.2em solid white !important;
   background-color: transparent !important;
+  transition: all 0.3s ease;
 }
 
 .project-card:hover {
@@ -241,7 +327,7 @@ body {
   right: 0.5em;
   top: 0.5em;
   padding: 0.5em 1em;
-  background-color: #FFB2B2;
+  background-color: #C8B6FF;
   border-radius: 2em;
   text-align: center;
   color: black;
@@ -261,6 +347,12 @@ body {
 
 .spin {
   animation: 15s linear 0s infinite normal spin;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* computer resolution */
@@ -356,7 +448,7 @@ body {
   }
 
   .name-header {
-    font-size: 5em !important;
+    font-size: 4em !important;
     font-weight: bold;
     margin: 0;
   }
@@ -521,3 +613,48 @@ body {
     width: 8em !important;
   }
 }
+
+
+.shooting-star {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  border-radius: 20%;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 2px #FFD6FF;
+  opacity: 1;
+  z-index: 1;
+  transform: rotate(45deg);
+  animation: shootingStarAnimation 1s linear forwards;
+}
+
+@keyframes shootingStarAnimation {
+  0% {
+    opacity: 1;
+    transform: translateX(-200px) translateY(-200px) rotate(70deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(200px) translateY(300px) rotate(70deg);
+  }
+}
+
+.rocket {
+  position: absolute;
+  left: -5%;
+  height: 50px;
+  opacity: 1;
+  animation: flyRocket 10s linear forwards;
+  z-index: -1;
+}
+
+@keyframes flyRocket {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(2500px) translateY(200px);
+  }
+}
+
